@@ -13,6 +13,9 @@ bibliography: references.bib
 execute:
     echo: false
     warning: false
+output:
+  html_document:
+    output_dir: docs
 ---
 
 ```{python}
