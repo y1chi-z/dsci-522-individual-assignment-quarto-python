@@ -8,11 +8,6 @@ format:
     pdf:
         toc: true
         toc_depth: 2
-output:
-  html_document:
-    output_dir: docs
-    toc: true
-    toc_depth: 2
 editor: source
 bibliography: references.bib
 execute:
@@ -71,7 +66,7 @@ We present the standard deviations in @tbl-horses_sd.
 #| tbl-cap: Standard deviation of historical (1906-1972) horse populations for each Canadian province.
 #| echo: false
 
-horses_sd_table = pd.read_csv("../results/horses_sd.csv")
+horses_sd_table = pd.read_csv("/results/horses_sd.csv")
 largest_sd = horses_sd_table['Province'].values[0]
 Markdown(horses_sd_table.to_markdown(index = False))
 ```
